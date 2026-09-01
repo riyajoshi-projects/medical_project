@@ -37,7 +37,7 @@ medical_project/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
+```
 
 🔄 Project Workflow
 1. Collect the medical disease dataset
