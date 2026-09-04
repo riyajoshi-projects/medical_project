@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MediCheck | Result</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🩺 MediCheck
+        </div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/">Prediction</a>
+        </div>
+
+    </nav>
+
+
+    <section class="prediction-section">
+
+        <div class="form-container"
+             style="text-align:center;">
+
+            <p class="tagline">
+                PREDICTION COMPLETE
+            </p>
+
+            <h1>
+                Your Prediction Result
+            </h1>
+
+            <div style="
+                margin:35px 0;
+                padding:30px;
+                border-radius:15px;
+                background:#f5f9fc;
+            ">
+
+                <p style="
+                    color:#64748b;
+                    margin-bottom:10px;
+                ">
+                    Predicted Condition
+                </p>
+
+                <h2 style="
+                    color:#168aad;
+                    font-size:32px;
+                ">
+                    {{ prediction }}
+                </h2>
+
+            </div>
+
+            
+
+            <a href="/"
+               class="start-btn"
+               style="margin-top:25px;">
+
+                ← Check Again
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 MediCheck | Machine Learning Project
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
