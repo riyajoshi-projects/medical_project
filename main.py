@@ -25,7 +25,7 @@ def predict():
         data=[[Age,BMI,BloodPressure,GlucoseLevel,Cholesterol,HeartRate,Smoking,FamilyHistory]]
         pred=model.predict(data)
 
-        print("medical data :->>",data)
+        print("medical disease data :->>",data)
 
         pred=int(pred[0])
 
